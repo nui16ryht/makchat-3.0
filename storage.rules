@@ -1,0 +1,12 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow public read and write access to all files.
+    // WARNING: This is insecure and not recommended for production.
+    // Anyone can read, write, or delete files in your bucket.
+    match /{allPaths=**} {
+      allow read, write;
+    }
+  }
+}

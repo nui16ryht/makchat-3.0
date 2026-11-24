@@ -1,0 +1,13 @@
+{
+  "brand": {
+    "logo": "/icon.png",
+    "icon": "/icon.png",
+    "description": "MakChat Official PNG Branding",
+    "hint": "chat bubble logo"
+  },
+  "placeholders": {
+    "userAvatar": "https://picsum.photos/seed/user/100",
+    "coverImage": "https://picsum.photos/seed/cover/1200/400",
+    "postImage": "https://picsum.photos/seed/post/600/400"
+  }
+}

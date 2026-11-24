@@ -1,0 +1,31 @@
+# Specifies the version of the App Hosting schema.
+specVersion: v1alpha1
+# Specifies the required components and their configuration.
+# For a web app, you need to specify the build and run configuration.
+build:
+  # The command to build your Next.js application.
+  # This command is executed in the root directory of your code.
+  run: npm install && npm run build
+run:
+  # The command to run your Next.js application.
+  # The command is executed in the root directory of your code.
+  # The PORT environment variable is automatically set by App Hosting.
+  run: npm run start
+# The settings for the App Hosting backend.
+backend:
+  # The region to run the backend in.
+  region: us-central1
+# The environment variables to pass to the build and run commands.
+env:
+  - variable: FIREBASE_API_KEY
+    value: AIzaSyDNwtXERn80AzpuEMNaAp3tVBOHJl8NCRs
+  - variable: FIREBASE_AUTH_DOMAIN
+    value: debatepro.firebaseapp.com
+  - variable: FIREBASE_PROJECT_ID
+    value: debatepro
+  - variable: FIREBASE_STORAGE_BUCKET
+    value: debatepro.firebasestorage.app
+  - variable: FIREBASE_MESSAGING_SENDER_ID
+    value: "382078359659"
+  - variable: FIREBASE_APP_ID
+    value: 1:382078359659:web:e9a521ee96d6c9beeeb92e
